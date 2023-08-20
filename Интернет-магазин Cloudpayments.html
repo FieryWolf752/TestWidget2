@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<!-- saved from url=(0037)https://show.cloudpayments.ru/widget/ -->
 <html lang="ru"><script id="allow-copy_script">(function agent() {
     let unlock = false
     document.addEventListener('allow_copy', (event) => {
@@ -29,24 +27,24 @@
         capture: true,
       })
     })
-  })()</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+  })()</script><head>
+    <meta charset="utf-8">
     <title>Интернет-магазин Cloudpayments</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link href="./Интернет-магазин Cloudpayments_files/style.min.css" type="text/css" rel="stylesheet">
-    <script src="./Интернет-магазин Cloudpayments_files/jquery-3.4.1.js.Без названия"></script>
-    <link href="./Интернет-магазин Cloudpayments_files/select2.min.css" rel="stylesheet">
+    <link href="/assets/css/style.min.css" type="text/css" rel="stylesheet">
+    <script src="/assets/js/plugins/jquery-3.4.1.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="">
 
     <header class="page-header header">
-    <a class="header__basket header__basket--widget basket" href="https://show.cloudpayments.ru/widget/#">
-        <span class="header__basket-count basket-count basket-count--none">0</span>
+    <a class="header__basket header__basket--widget basket" href="#">
+        <span class="header__basket-count basket-count">4</span>
     </a>
 
     <div class="page-header__wrapper header__wrapper">
-        <a href="https://show.cloudpayments.ru/" class="page-header__link"></a>
+        <a href="/" class="page-header__link"></a>
         <h1 class="page-header__title">Интернет-магазин</h1>
         <p class="header__text">Мы сделали для вас пример интернет-магазина. Здесь можно посмотреть, как ваши покупатели будут видеть платежи через CloudPayments. Добавьте в корзину товар, который хотите купить. Деньги не спишутся — все товары, как и платежи, не настоящие.</p>
         <p class="header__text" style="margin-bottom: 45px;">Важно: не все браузеры поддерживают оплату через Apple и Google Pay. Для корректной работы откройте страницу в соответствующем браузере. Для Apple Pay это Apple Safari, для Google Pay — Google Chrome, Mozilla Firefox, Apple Safari, Microsoft Edge, Opera или UCWeb UC.</p>
@@ -58,38 +56,38 @@
     <ul class="page-goods__list page-goods__list--widget">
                                 <li class="goods">
                 <div class="goods__image-wrapper goods__image-wrapper--checkout">
-                    <img src="./Интернет-магазин Cloudpayments_files/pillow@1x.jpg" srcset="/assets/img/pillow@2x.jpg" alt="подушка 2x" class="goods__image">
+                    <img src="/assets/img/pillow@1x.jpg" srcset="/assets/img/pillow@2x.jpg" alt="подушка 2x" class="goods__image">
                 </div>
                 <div class="goods__content">
                     <div class="goods__text-wrapper">
                         <h3 class="goods__text">Подушка «Padi»</h3>
                         <p class="goods__text-price">1 р.</p>
                     </div>
-                    <button type="button" class="button button--goods addBtn " value="0" data-product-id="1">Купить                    </button>
+                    <button type="button" class="button button--goods addBtn button--basket" value="1" data-product-id="1">Удалить</button>
                 </div>
             </li>
                                 <li class="goods">
                 <div class="goods__image-wrapper goods__image-wrapper--checkout">
-                    <img src="./Интернет-магазин Cloudpayments_files/lamp@1x.jpg" srcset="/assets/img/lamp@2x.jpg" alt="лампа 2x" class="goods__image">
+                    <img src="/assets/img/lamp@1x.jpg" srcset="/assets/img/lamp@2x.jpg" alt="лампа 2x" class="goods__image">
                 </div>
                 <div class="goods__content">
                     <div class="goods__text-wrapper">
                         <h3 class="goods__text">Лампа «Lamp»</h3>
                         <p class="goods__text-price">1 р.</p>
                     </div>
-                    <button type="button" class="button button--goods addBtn " value="0" data-product-id="2">Купить                    </button>
+                    <button type="button" class="button button--goods addBtn button--basket" value="1" data-product-id="2">Удалить</button>
                 </div>
             </li>
                                 <li class="goods">
                 <div class="goods__image-wrapper goods__image-wrapper--checkout">
-                    <img src="./Интернет-магазин Cloudpayments_files/blanket@1x.jpg" srcset="/assets/img/blanket@2x.jpg" alt="плед 2x" class="goods__image">
+                    <img src="/assets/img/blanket@1x.jpg" srcset="/assets/img/blanket@2x.jpg" alt="плед 2x" class="goods__image">
                 </div>
                 <div class="goods__content">
                     <div class="goods__text-wrapper">
                         <h3 class="goods__text">Плед «Tekk»</h3>
                         <p class="goods__text-price">1 р.</p>
                     </div>
-                    <button type="button" class="button button--goods addBtn " value="0" data-product-id="3">Купить                    </button>
+                    <button type="button" class="button button--goods addBtn button--basket" value="1" data-product-id="3">Удалить</button>
                 </div>
             </li>
             </ul>
@@ -100,12 +98,36 @@
         <h3 class="popup-down__title">Ваш заказ:</h3>
         <button class="popup-down__close-btn close-button" type="button" name="button"><span class="visually-hidden">Закрыть попап</span>
         </button>
-        <form class="popup-down__main" action="https://show.cloudpayments.ru/widget/#">
-            <div id="widget-cart">
-                <ul class="popup-down__list">
-    </ul>
+        <form class="popup-down__main" action="#">
+            <div id="widget-cart"><ul class="popup-down__list">
+            <li class="popup-down__item" data-name="Лампа «Lamp»" data-id="2" data-price="1">
+            <img class="popup-down__image" src="/assets/img/lamp@1x.jpg" srcset="/assets/img/lamp@2x.jpg 2x" alt="лампа">
+            <div class="popup-down__m-group">
+                <b class="popup-down__name">Лампа «Lamp»</b>
+                <div class="popup-down__count">
+                    <button class="button-cv button-cv--decrease" type="button" name="button" value="0" data-product-id="2"><span class="visually-hidden">Уменьшить количество товаров</span></button>
+                    <input class="popup-down__field" type="text" value="3" id="goodsValue-2">
+                    <button class="button-cv button-cv--increase" type="button" name="button" value="1" data-product-id="2"><span class="visually-hidden">Увеличить количество товаров</span></button>
+                </div>
             </div>
-            <div class="not-empty-cart" style="display: none;">
+            <span class="popup-down__counter"><span id="goodsCost-2">3</span> р.</span>
+        </li>
+            <li class="popup-down__item" data-name="Подушка «Padi»" data-id="1" data-price="1">
+            <img class="popup-down__image" src="/assets/img/pillow@1x.jpg" srcset="/assets/img/pillow@2x.jpg 2x" alt="подушка">
+            <div class="popup-down__m-group">
+                <b class="popup-down__name">Подушка «Padi»</b>
+                <div class="popup-down__count">
+                    <button class="button-cv button-cv--decrease" type="button" name="button" value="0" data-product-id="1"><span class="visually-hidden">Уменьшить количество товаров</span></button>
+                    <input class="popup-down__field" type="text" value="1" id="goodsValue-1">
+                    <button class="button-cv button-cv--increase" type="button" name="button" value="1" data-product-id="1"><span class="visually-hidden">Увеличить количество товаров</span></button>
+                </div>
+            </div>
+            <span class="popup-down__counter"><span id="goodsCost-1">1</span> р.</span>
+        </li>
+    </ul>
+<b class="popup-down__sum">Итого: <span id="sumFields">4</span>р.</b>
+</div>
+            <div class="not-empty-cart" style="display: block;">
                 <div class="popup-down__group">
                     <span class="popup-down__text">Выслать кассовый чек</span>
                     <input class="popup-down__input-radio visually-hidden" type="radio" name="check" checked="" id="checkMail">
@@ -134,7 +156,7 @@
                     <p class="popup-down__footer-text">⚠︎ Оплата тестовая, можно использовать любые карты</p>
                 </div>
             </div>
-            <div class="empty-cart">
+            <div class="empty-cart" style="display: none;">
                 <p class="popup-down__footer-text">В корзине нет товаров</p>
             </div>
         </form>
@@ -147,7 +169,7 @@
     window.cloudpayments_config = {"public_id":"pk_b430f8b23575e9942b71e7d2b3f49","applepay_merchant_id":"merchant.ru.cloudpayments","googlepay_gateway":"cloudpayments","googlepay_merchant_id":"04349806409183181471"}</script>
 
 
-<script src="./Интернет-магазин Cloudpayments_files/cloudpayments"></script>
+<script src="https://widget.cloudpayments.ru/bundles/cloudpayments"></script>
 <script>
     var pay = function () {
         var email = '', phone = '';
@@ -221,7 +243,7 @@
     <footer class="page-footer ">
         <div class="container">
             <div class="footer__wrap">
-                <div class="footer__item"><a class="footer__logo" href="https://show.cloudpayments.ru/widget/#">
+                <div class="footer__item"><a class="footer__logo" href="#">
                         <svg class="svgstyle">
                             <use xlink:href="/assets/img/sprite.svg#logo-2"></use>
                         </svg></a>
@@ -284,14 +306,14 @@
 
     </footer>
 
-    <script src="./Интернет-магазин Cloudpayments_files/IMask.js.Без названия"></script>
-<script src="./Интернет-магазин Cloudpayments_files/validation.js.Без названия"></script>
-<script src="./Интернет-магазин Cloudpayments_files/changeFields.js.Без названия"></script>
-<script src="./Интернет-магазин Cloudpayments_files/button-cv.js.Без названия"></script>
-<script src="./Интернет-магазин Cloudpayments_files/select-custom.js.Без названия"></script>
-<script src="./Интернет-магазин Cloudpayments_files/basket.js.Без названия"></script>
-<script src="./Интернет-магазин Cloudpayments_files/widget-basket.js.Без названия"></script>
-<script src="./Интернет-магазин Cloudpayments_files/select2.js.Без названия"></script>
+    <script src="/assets/js/plugins/IMask.js"></script>
+<script src="/assets/js/validation.js"></script>
+<script src="/assets/js/changeFields.js"></script>
+<script src="/assets/js/button-cv.js"></script>
+<script src="/assets/js/select-custom.js"></script>
+<script src="/assets/js/basket.js"></script>
+<script src="/assets/js/widget-basket.js"></script>
+<script src="/assets/js/plugins/select2.js"></script>
 
 
 <div at-magnifier-wrapper=""><div class="at-theme-light"><div class="at-base notranslate" translate="no"></div></div></div></body></html>
